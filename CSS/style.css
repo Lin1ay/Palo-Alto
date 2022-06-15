@@ -224,12 +224,12 @@ html {
 @media screen and (min-width: 768px) and (max-width:1024px) {
 	html { font-size: 90%; }    
     .container__inner {
-        margin-left: 3rem; 
-        margin-right: 3rem;       
+        margin-left: 7rem; 
+        margin-right: 7rem;       
     }
     .header {
-        margin-left: 3rem; 
-        margin-right: 3rem;  
+        margin-left: 7rem; 
+        margin-right: 7rem;  
     }
     .article {
         margin-bottom: 2rem;
@@ -289,7 +289,7 @@ html {
 
     }
     .article__header {        
-        font-size: 1.69rem; 
+        font-size: 1.9rem; 
     }
     .article__italictext {
         font-size: 1.5rem;
@@ -330,7 +330,7 @@ html {
 
     }
     .article__header {        
-        font-size: 1.69rem; 
+        font-size: 1.9rem; 
     }
     .article__italictext {
         font-size: 1.5rem;
@@ -366,7 +366,7 @@ html {
         margin-right: 2rem;
     }
     .article__header {        
-        font-size: 1.45rem; 
+        font-size: 1.5rem; 
     }
     .article__italictext {
         font-size: 1.4rem;
@@ -413,12 +413,12 @@ html {
 @media screen and (min-width: 900px) and (max-width:1350px) and (max-height:1000px) {
 	html { font-size: 90%; }    
     .container__inner {
-        margin-left: 3rem; 
-        margin-right: 3rem;       
+        margin-left: 17rem; 
+        margin-right: 17rem;       
     }
     .header {
-        margin-left: 3rem; 
-        margin-right: 3rem;  
+        margin-left: 17rem; 
+        margin-right: 17rem;  
     }
     .article {
         margin-bottom: 2rem;
@@ -442,6 +442,42 @@ html {
         line-height:normal;
     }
     .article__header {        
-        font-size: 1.69rem; 
+        font-size: 1.9rem; 
+    }
+}
+@media screen and (max-width:250px) {
+	html { font-size: 60%; }
+    .container__inner {
+        margin-left: 0; 
+        margin-right: 0;           
+    }
+    .header {
+        margin-left: 1rem; 
+        margin-right: 1rem; 
+    }
+    .article {
+        margin-bottom: 1rem;
+    }
+    .article__bookmark {
+        right: 0;
+    }
+    .article__inner {
+        padding: 0rem 2rem;       
+    }
+    .footer {
+        margin-top: 0;
+    }
+    .footer__copyright {
+        text-align: center;
+        margin-left: 2rem; 
+        margin-right: 2rem;
+    }
+    .article__header {        
+        font-size: 1.45rem; 
+    }
+    .article__italictext {
+        font-size: 1.4rem;
+        line-height:normal;
+        color: #BDBDBD;
     }
 }
