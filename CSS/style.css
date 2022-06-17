@@ -152,7 +152,7 @@ h2 {
 }
 
 .mountain__photo {
-    margin-bottom: -0.5rem;
+    display: block;
     width: 100%;
 }
 
@@ -189,10 +189,14 @@ footer {
 }
 
 .footer__social {
-    width: 10%;
+    width: 50%;
     display: flex;
-    justify-content: space-between;    
+    justify-content: center;    
     margin-bottom: 3.75rem;    
+}
+
+.footer__social-icon:not(:last-child) {    
+    margin-right: 1rem;
 }
 
 .footer__title {
@@ -206,14 +210,13 @@ footer {
 }
 
 .footer__nav {   
-    width: 10%;
+    width: 50%;
     color: #fff;
     display: flex;
-    justify-content: space-around;     
+    justify-content: center;     
 }
 
-.footer__nav-link {
-    margin-right: 15px;
+.footer__nav-link-a {    
     font-size: 1rem;
     font-weight: bold;
     color: #fff;       
@@ -221,12 +224,12 @@ footer {
     text-decoration: none;          
 }
 
-.footer__nav-link:hover {
-    color: #000;
+.footer__nav-link:not(:last-child) {    
+    margin-right: 1rem;
 }
 
-.footer__nav-link {
-    color: #fff;    
+.footer__nav-link-a:hover {
+    color: #000;
 }
 
 .footer__nav-link:hover {
