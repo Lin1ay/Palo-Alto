@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/normalize.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/style.css">
+        <title>Profile</title>
+    </head>
+    <body>
+        <header>
+           <span><a class="header__title" href="#"><strong>Palo-Alto</strong></a></span>           
+        </header>
+        <div class="container">   
+                <div class="page__article">             
+                    <div class="article">
+                        <div class="article__inner">                            
+                            <div class="article__date"></div> 
+                            <h3>Profile</h3>
+                            <div class="form">
+                                <form action="/">                                    
+                                    <label for="firstName">First Name</label>
+                                    <input name="firstName" type="text" placeholder="Enter your First Name">
+                                    <label for="lastName">Last Name</label>
+                                    <input name="lastName" type="text" placeholder="Enter your Last Name">
+                                    <label for="Phone">Phone</label>
+                                    <input id="online_phone" name="phone" type="tel" maxlength="50"
+                                    autofocus="autofocus" required="required"                                    
+                                    pattern="\_+\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+                                    placeholder="+_(___)___-__-__">
+                                    <label for="dtBox">Date of Birth</label>
+                                    <input id ="datepicker" name="dtBox" type="text" placeholder="DD/MM/YYYY">                                     
+                                    <label for="sex"></label>
+                                    <p><input class="form__input-sex" name="sex" type="radio" checked>Male</p>
+                                    <p><input class="form__input-sex" name="sex" type="radio">Female</p>                                                                    
+                                    </div> 
+                                    <input type="submit">                     
+                                <form>                               
+                            </div>                    
+                        </div>
+                    </div>
+                </div>
+    <footer>        
+        <span class="footer__title"><strong>Palo-Alto</strong></span>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="/JS/main.js"></script>
+    </body>
+</html>

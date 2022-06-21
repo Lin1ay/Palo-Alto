@@ -102,6 +102,15 @@ h2 {
     padding-bottom: 5%;
     border-bottom: #eee 0.25rem solid;
 }
+h3 {
+    margin-top: 2%;
+    font-size: 3.5rem;    
+    font-weight: bolder;
+    letter-spacing: 0.04rem;
+    word-spacing: 0.2rem;   
+    padding-bottom: 5%;
+    border-bottom: #eee 0.25rem solid;
+}
 
 .article__text {
     padding-top: 2.5rem;
@@ -236,40 +245,66 @@ footer {
     color: #000;   
 }
 
-@media screen and (min-width: 768px) and (max-width:1024px) {
-    html { font-size: 100%; }  
-    .article__bookmark {
-    right: 0;
-    }  
+form {
+    margin: 0 auto;
+    padding: 0 25%;
+    display: flex;
+    flex-direction: column;
 }
 
-@media screen and (min-width:481px) and (max-width: 768px) {
-    html { font-size: 80%; }  
-    .article__bookmark {
-    right: 0;
+label {
+    font-size: 1.5rem;
+    padding-bottom:0.5rem;
+}
+
+input[type="text"],[type="email"],[type="tel"],[type="date"] {
+    height: 3.5rem;
+    background-color: #eee;
+    padding: 0 2rem;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    border-style: none;   
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+    html { font-size: 100%; }  
+    header {
+        padding: 0 1.250rem;
+    }   
+    .container {
+        padding: 0;
+        margin: 0 1rem;
     }
+}
+
+@media screen and (min-width:481px) and (max-width: 767px) {
+    html { font-size: 80%; }  
+    header {
+        padding: 0 1.250rem;
+    }   
+    .container {
+        padding: 0;
+        margin: 0 1rem;
+    }
+    
 }
 
 @media screen and (min-width:320px) and (max-width: 480px) {
 	html { font-size: 60%; }
     header {
-        padding: 2%;
+        padding: 0 1.250rem;
     }   
     h2 {
         font-size: 6vw;
     }
     .header__title {
         font-size: 8vw;       
-    }
-    .footer__social {
-        width: 30%;
-    }
+    }   
     .container {
         padding: 0;
+        margin: 0 1rem;
     }
-    .article__bookmark {
-        right: 0;
-    }
+    
     .footer__social {      
         margin-bottom: 1.75rem; 
     }
@@ -291,19 +326,17 @@ footer {
 @media screen and (min-width:250px) and (max-width: 319px) {
 	html { font-size: 60%; }
     header {
-        padding: 0;
+        padding: 0 1.125rem;
     }   
     h2 {
         font-size: 6vw;
     }
     .header__title {
         font-size: 8vw;       
-    }
-    .footer__social {
-        width: 30%;
-    }
+    }   
     .container {
         padding: 0;
+        margin: 0 1rem       
     }
     .article__bookmark {
         right: 0;
